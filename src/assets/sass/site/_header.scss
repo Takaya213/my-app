@@ -1,0 +1,73 @@
+header {
+    background: rgba(255, 255, 255, .95);
+    position: fixed;
+    width: 100%;
+    > div {
+        max-width: rem-calc(1400);
+        margin: auto;
+        display: grid;
+        grid-template-columns: rem-calc(173) auto rem-calc(173);
+        align-items: center;
+        padding: rem-calc(34) rem-calc(20);
+        transition: all linear .3s;
+        > a {
+            font-family: 'Space Grotesk Bold';
+            &:first-of-type {
+                justify-self: start;
+            }
+            &:last-of-type {
+                justify-self: end;
+            }
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a {
+                font-family: 'Space Grotesk Bold';
+                font-size: rem-calc(24);
+                color: $onyx;
+                position: relative;
+                &::after {
+                    content: '';
+                    transition: all linear .3s;
+                    opacity: 0;
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: rem-calc(4);
+                    height: rem-calc(4);
+                    border-radius: 100%;
+                    background: $onyx;
+                }&:active, &:visited {
+                    color: $onyx;
+                }
+                &:hover, &.active {
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        ul, li {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul {
+            display: grid;
+            grid-template-columns: repeat(6, auto);
+            gap: rem-calc(50);
+        }
+    }
+    &.slim {
+        > div {
+            grid-template-columns: rem-calc(80) auto rem-calc(173);
+            padding: rem-calc(14) rem-calc(20);
+            nav a {
+                font-size: rem-calc(20);
+            }
+        }
+    }
+}

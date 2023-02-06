@@ -1,0 +1,12 @@
+.button {
+    padding: rem-calc(14) rem-calc(25);
+    display: block;
+    color: $onyx;
+    &-arrow {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: rem-calc(8);
+    }
+}

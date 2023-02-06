@@ -1,0 +1,17 @@
+@import '~normalize.css/normalize.css';
+@import 'site/_config';
+@import 'base/_mixins';
+@import 'base/_fonts';
+@import 'base/buttons';
+@import 'site/_header';
+@import 'site/layout';
+
+a {
+  text-decoration: none;
+  transition: all linear .3s;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
