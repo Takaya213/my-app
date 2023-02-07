@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import useScrollPosition from '../hooks/useScrollPosition'
 
 import Logo from '../assets/images/nicole.svg';
-import FwdArrow from '../assets/images/arrow-forward.svg';
+import Icon from './icons'
 
 export const Header = () => {
     function classNames(...classes) {
@@ -26,7 +26,7 @@ export const Header = () => {
         </nav>
         <Link to='/' className='button button-arrow'>
           <span>Let's talk</span>
-          <img src={FwdArrow} alt='Forward facing arrow'/>
+          <Icon.FwdArrow style={{ color: '#121212' }} />
         </Link>
       </div>
     </header>

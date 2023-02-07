@@ -6,6 +6,11 @@
 @import 'site/_header';
 @import 'site/layout';
 
+html, body {
+  font-family: 'Space Grotesk Regular';
+  font-size: rem-calc(16);
+}
+
 a {
   text-decoration: none;
   transition: all linear .3s;
