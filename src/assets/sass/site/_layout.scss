@@ -1,5 +1,21 @@
+html,
+body {
+    font-family: 'Space Grotesk Regular';
+    font-size: rem-calc(16);
+}
+
 main > div {
     padding-top: rem-calc(120);
     background: $irisBlue url('/assets/images/girl-at-desk.svg') no-repeat center right 20%;
     height: 1420px;
+}
+
+a {
+    text-decoration: none;
+    transition: all linear .3s;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }

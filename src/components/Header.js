@@ -6,10 +6,10 @@ import Logo from '../assets/images/nicole.svg';
 import Icon from './icons'
 
 export const Header = () => {
-    function classNames(...classes) {
-        return classes.filter(Boolean).join(' ')
-    }
-    const scrollPosition = useScrollPosition()
+  function classNames(...classes) {
+    return classes.filter(Boolean).join(' ')
+  }
+  const scrollPosition = useScrollPosition()
   return (
     <header className={classNames( scrollPosition > 0 ? 'slim' : '' )}r>
       <div>
@@ -24,7 +24,7 @@ export const Header = () => {
                 <li><Link activeClass="active" to='journal'>Journal</Link></li>
             </ul>
         </nav>
-        <Link to='/' className='button button-arrow'>
+        <Link to='/' className='button button-light button-arrow'>
           <span>Let's talk</span>
           <Icon.FwdArrow style={{ color: '#121212' }} />
         </Link>

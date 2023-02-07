@@ -1,0 +1,11 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk SemiBold';
+}
+
+b, strong {
+    font-family: 'Space Grotesk Bold';
+}
+
+h1 {
+    font-size: clamp(2.25rem, 0.0397rem + 6.6225vw, 6rem);
+}

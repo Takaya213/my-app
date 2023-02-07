@@ -8,8 +8,8 @@ function Home() {
     <div className="App">
       <div className='hero-text'>
         <p>Nicole Lambon</p>
-        <p>UI Designer &amp; Developer</p>
-        <Link to='/' className='button button-arrow button-arrow-dark'>
+        <h1>UI Designer <br />&amp; Developer</h1>
+        <Link to='/' className='button button-dark button-arrow'>
           <span>Start a project</span>
           <Icon.FwdArrow  style={{ color: '#FFFFFF' }} />
         </Link>
@@ -18,4 +18,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Home
