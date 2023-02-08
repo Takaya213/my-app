@@ -8,35 +8,48 @@ body {
     font-size: rem-calc(16);
 }
 
-.hero-image {
-    padding-top: rem-calc(120);
-    background: $irisBlue url('/assets/images/girl-at-desk.svg') no-repeat center right 20%;
-    height: rem-calc(1420);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.hero-wrapper {
+    margin-top: rem-calc(120);
+    padding: 0 rem-calc(20);
+    padding-top: clamp(3.125rem, -1.6639rem + 14.3488vw, 11.25rem);
+    padding-bottom: clamp(3.125rem, -1.6639rem + 14.3488vw, 11.25rem);
+    background-color: $irisBlue;
 }
 
-.hero-text {
+.hero-area {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: center;
+    align-items: center;
     max-width: rem-calc(1440);
-    width: 100%;
-    p, h1 {
-        margin: 0;
+    margin: auto;
+    @media screen and (max-width: 700px) {
+        grid-template-columns: 100%;
+        .hero-image {
+            display: none;
+        }
     }
-    p {
-        font-size: rem-calc(20);
-    }
-    h1 {
-        margin: rem-calc(15) 0;
+    .hero-text {
+        p, h1 {
+            margin: 0;
+        }
+        p {
+            font-size: rem-calc(20);
+        }
+        h1 {
+            margin: rem-calc(15) 0;
+        }
     }
 }
+
 
 a {
     text-decoration: none;
     transition: all linear .3s;
 }
 
-img {
+img, svg {
     max-width: 100%;
+    height: auto;
     display: block;
 }
