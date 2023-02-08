@@ -5,7 +5,7 @@ import Icon from '../components/icons'
 
 function Home() {
   return (
-    <div className="App">
+    <div className="hero-image">
       <div className='hero-text'>
         <p>Nicole Lambon</p>
         <h1>UI Designer <br />&amp; Developer</h1>
