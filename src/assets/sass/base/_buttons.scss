@@ -29,8 +29,7 @@
         color: $white;
         span {
             &::before {
-                display: none;
-                visibility: hidden;
+                background: $white;
             }
         }
     }

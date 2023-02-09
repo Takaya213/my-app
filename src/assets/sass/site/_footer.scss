@@ -1,0 +1,19 @@
+footer {
+    background: $onyx;
+    color: $white;
+    .footer-wrapper {
+        max-width: rem-calc(1200);
+        margin: auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        &:first-of-type {
+            padding-top: rem-calc(180);
+            padding-bottom:  rem-calc(130);
+        }
+        &:last-of-type {
+            padding-top: rem-calc(50);
+            padding-bottom:  rem-calc(50);
+            border-top: 1px solid rgba(255, 255, 255, .1);
+        }
+    }
+}
