@@ -3,6 +3,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 10;
     > div {
         max-width: rem-calc(1400);
         margin: auto;
