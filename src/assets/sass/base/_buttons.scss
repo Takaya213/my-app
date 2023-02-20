@@ -4,6 +4,7 @@
     font-size: rem-calc(20);
     font-weight: normal;
     transform: perspective(1px) translateZ(0);
+    width: fit-content;
     &-arrow {
         display: inline-flex;
         flex-direction: row;
@@ -42,6 +43,15 @@
             }
         }
     }
+    &-grey {
+        background: $desertStorm;
+        color: $onyx;
+        span {
+            &::before {
+                background: $onyx;
+            }
+        }
+    }
     svg {
         transition: ease-out transform .1s;
     }
@@ -55,4 +65,12 @@
             transform: translateX(4px) rotate(-45deg);
         }
     }
+}
+
+.button-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: clamp(1.25rem, -0.592rem + 5.519vw, 4.375rem);
+    margin-bottom: clamp(2.5rem, -0.079rem + 7.726vw, 6.875rem);
 }

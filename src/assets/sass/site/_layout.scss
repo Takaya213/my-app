@@ -6,6 +6,7 @@ html,
 body {
     font-family: 'Space Grotesk Regular';
     font-size: rem-calc(16);
+    background-color: $desertStorm;
 }
 
 .hero-wrapper {
@@ -52,4 +53,129 @@ img, svg {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+.wrapper {
+    max-width: rem-calc(1440);
+    margin: auto;
+    padding: 0 rem-calc(20);
+}
+
+.inner-wrapper {
+    max-width: rem-calc(1200);
+}
+
+.services {
+    display: grid;
+    gap: rem-calc(48);
+    grid-template-columns: repeat(3, calc((100% - 96px) / 3));
+    margin-top: -13%;
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: 100%;
+        margin-top: rem-calc(30);
+    }
+    .service {
+        padding: clamp(1.125rem, 0.02rem + 3.311vw, 3rem);
+        background: $white;
+        color: $onyx;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08);
+        display: grid;
+        grid-template-columns: subgrid;
+        .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: rem-calc(17);
+            border: 1px solid $whiteLilac;
+            margin-bottom: rem-calc(42);
+            width: fit-content;
+            height: fit-content;
+        }
+        .arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: rem-calc(34);
+            padding: rem-calc(17);
+            background: $desertStorm;
+            width: fit-content;
+            height: fit-content;
+        }
+        h4, p {
+            margin: 0;
+        }
+        h4 {
+            margin-bottom: rem-calc(14);
+        }
+        &:hover, &.active {
+            background: $onyx;
+            color: $white;
+            p {
+                color: $white;
+            }
+            .icon {
+                border-color: $white;
+                svg path {
+                    fill: $white;
+                }
+            }
+            .arrow {
+                background: $charcoal;
+                svg {
+                    transform: rotate(-45deg);
+                    path {
+                        fill: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.work {
+    background: $white;
+    color: $onyx;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08);
+    display: grid;
+    grid-template-columns: auto rem-calc(700);
+    &:not(:last-child) {
+        margin-bottom: rem-calc(64);
+    }
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: 100%;
+    }
+    .work-content {
+        display: grid;
+        padding: clamp(1.5rem, 0.026rem + 4.415vw, 4rem) 0 clamp(1.5rem, 0.026rem + 4.415vw, 4rem) clamp(1.5rem, 0.026rem + 4.415vw, 4rem);
+        z-index: 10;
+        @media screen and (max-width: 1024px) {
+            padding: clamp(1.5rem, 0.026rem + 4.415vw, 4rem);
+            gap: rem-calc(30);
+        }
+        h3, p {
+            margin: 0;
+        }
+        h3 {
+            margin-top: clamp(1.25rem, 0.219rem + 3.091vw, 3rem);
+            margin-bottom: rem-calc(20)
+        }
+        .button {
+            align-self: end;
+        }
+    }
+    .work-img {
+        position: relative;
+        .fade {
+            background: linear-gradient(90deg, #FFFFFF 6.25%, rgba(255, 255, 255, 0) 100%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 2;
+        }
+        img {
+            filter: grayscale(100%);
+        }
+    }
 }

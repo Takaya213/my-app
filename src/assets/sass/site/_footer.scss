@@ -1,18 +1,22 @@
 footer {
     background: $onyx;
     color: $white;
+    padding: 0 rem-calc(30);
     .footer-wrapper {
         max-width: rem-calc(1200);
         margin: auto;
         display: grid;
         grid-template-columns: 60% 50%;
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: 100%;
+        }
         &:first-of-type {
-            padding-top: rem-calc(180);
-            padding-bottom:  rem-calc(130);
+            padding-top: clamp(1.875rem, -3.6507rem + 16.5563vw, 11.25rem);
+            padding-bottom: clamp(1.875rem, -1.8088rem + 11.0375vw, 8.125rem);
         }
         &:last-of-type {
-            padding-top: rem-calc(50);
-            padding-bottom:  rem-calc(50);
+            padding-top: clamp(1.875rem, 1.1382rem + 2.2075vw, 3.125rem);
+            padding-bottom: clamp(1.875rem, 1.1382rem + 2.2075vw, 3.125rem);
             border-top: 1px solid rgba(255, 255, 255, .1);
         }
     }

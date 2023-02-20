@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import useScrollPosition from '../hooks/useScrollPosition'
 
 import Logo from '../assets/images/nicole.svg';
-import Icon from './icons'
+import Icon from './Icons'
 
 export const Header = () => {
   function classNames(...classes) {
@@ -14,7 +14,7 @@ export const Header = () => {
     <header className={classNames( scrollPosition > 0 ? 'slim' : '' )}r>
       <div>
         <Link to='/'><img src={Logo} alt='Nicole.' /></Link>
-        <nav>
+        <nav id='nav'>
             <ul>
                 <li><Link activeClass="active" to='/'>About</Link></li>
                 <li><Link activeClass="active" to='work'>Work</Link></li>

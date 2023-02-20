@@ -12,4 +12,26 @@ h1 {
 
 h2 {
     font-size: clamp(2.5rem, 1.0265rem + 4.415vw, 5rem);
+    margin-top: clamp(2.5rem, -0.079rem + 7.726vw, 6.875rem);
+    margin-bottom: clamp(1.25rem, -0.592rem + 5.519vw, 4.375rem);
+}
+
+h3 {
+    font-size: clamp(2.125rem, 1.315rem + 2.428vw, 3.5rem);
+}
+
+h4 {
+    font-size: rem-calc(28);
+}
+
+p {
+    font-size: rem-calc(20);
+}
+
+.small {
+    font-size: rem-calc(16);
+}
+
+.txt-dark-grey {
+    color: $darkGray;
 }
