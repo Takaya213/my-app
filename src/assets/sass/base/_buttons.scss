@@ -34,6 +34,16 @@
             }
         }
     }
+    &-dark-border {
+        background: $onyx;
+        color: $white;
+        border: 2px solid $white;
+        span {
+            &::before {
+                background: $white;
+            }
+        }
+    }
     &-light {
         background: $white;
         color: $onyx;
@@ -64,6 +74,10 @@
         > svg {
             transform: translateX(4px) rotate(-45deg);
         }
+    }
+    &::after {
+        display: none;
+        visibility: hidden;
     }
 }
 

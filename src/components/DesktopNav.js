@@ -1,16 +1,10 @@
-import React from "react"
-import { Link } from "react-router-dom"
-import useScrollPosition from '../hooks/useScrollPosition'
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 
-export const Nav = () => {
-    function classNames(...classes) {
-        return classes.filter(Boolean).join(' ')
-    }
-    const scrollPosition = useScrollPosition()
-
+export const DesktopNav = () => {
     return (
-        <nav className={classNames( scrollPosition > 0 ? 'slim' : '' )}>
+        <nav id="nav">
             <ul>
                 <li><Link activeClass="active" to='/'>About</Link></li>
                 <li><Link activeClass="active" to='work'>Work</Link></li>
@@ -20,6 +14,5 @@ export const Nav = () => {
                 <li><Link activeClass="active" to='journal'>Journal</Link></li>
             </ul>
         </nav>
-    )
-  
+    )  
 }
