@@ -2,7 +2,7 @@ import React from "react"
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 import { Navigation, A11y } from 'swiper'
 
-import Icon from './Icons'
+import Icon from './icons'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
