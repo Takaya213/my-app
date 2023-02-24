@@ -5,10 +5,13 @@ import { ReactComponent as WebDev } from '../assets/images/web-development.svg'
 import { ReactComponent as UxUi } from '../assets/images/ux-ui-design.svg'
 import { ReactComponent as Access } from '../assets/images/accessibility.svg'
 
+import { ReactComponent as Arrow } from '../assets/images/arrow.svg'
+
 export default {
     FwdArrow,
     GirlDesk,
     WebDev,
     UxUi,
-    Access
+    Access,
+    Arrow
 }

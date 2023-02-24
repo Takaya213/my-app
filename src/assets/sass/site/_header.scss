@@ -78,6 +78,9 @@ header {
         > div {
             grid-template-columns: rem-calc(80) auto rem-calc(173);
             padding: rem-calc(14) rem-calc(20);
+            @media screen and (max-width: 1024px) {
+                grid-template-columns: rem-calc(173) auto;
+            }
             nav a {
                 font-size: rem-calc(20);
             }

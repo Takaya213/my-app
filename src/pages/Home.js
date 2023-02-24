@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom'
 import Icon from '../components/Icons'
 import Services from "../components/Services"
 import Work from "../components/Work"
+import Experience from "../components/Experience"
+import Skills from "../components/Skills"
+import Education from "../components/Education"
 
 function Home() {
   return (
@@ -25,6 +28,9 @@ function Home() {
       </div>
       <Services />
       <Work />
+      <Experience />
+      <Skills />
+      <Education />
     </>
   );
 }

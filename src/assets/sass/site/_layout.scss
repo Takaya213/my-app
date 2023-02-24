@@ -63,6 +63,22 @@ img, svg {
 
 .inner-wrapper {
     max-width: rem-calc(1200);
+    position: relative;
+}
+
+.white-bg {
+    background: $white;
+    padding: clamp(3.125rem, 0.915rem + 6.623vw, 6.875rem) rem-calc(10) clamp(3.125rem, 0.915rem + 6.623vw, 6.875rem);
+    h2 {
+        margin-top: 0;
+    }
+}
+
+.inner-padding {
+    padding: clamp(3.125rem, 0.915rem + 6.623vw, 6.875rem) rem-calc(10) clamp(3.125rem, 0.915rem + 6.623vw, 6.875rem);
+    h2 {
+        margin-top: 0;
+    }
 }
 
 .services {
@@ -176,6 +192,86 @@ img, svg {
         }
         img {
             filter: grayscale(100%);
+        }
+    }
+}
+
+// Experience
+.experience-years {
+    .swiper-slide {
+        background: $desertStorm;
+        padding: clamp(1.75rem, 1.013rem + 2.208vw, 3rem);
+        height: unset;
+        .experience {
+            display: grid;
+            gap: clamp(1.75rem, 1.013rem + 2.208vw, 3rem);
+            height: 100%;
+            justify-content: start;
+            .content {
+                min-height: rem-calc(185);
+            }
+        }
+        p {
+            margin-top: 0;
+        }
+        .xsmall {
+            margin: 0;
+        }
+        .job-info {
+            align-self: end;
+            p:not(.xsmall) {
+                margin: 0;
+                margin-top: rem-calc(5);
+                font-family: 'Space Grotesk SemiBold';
+            }
+        }
+    }
+}
+
+.swiper-header {
+    position: relative;
+}
+
+.swiper-buttons {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: grid;
+    grid-template-columns: repeat(2, rem-calc(23));
+    gap: rem-calc(23);
+    > div {
+        width: rem-calc(32);
+        height: rem-calc(32);
+        cursor: pointer;
+        &.previous-btn {
+            transform: rotate(180deg);
+        }
+        &.swiper-button-disabled {
+            svg path {
+                fill: $paleSlate;
+            }
+        }
+    }
+}
+
+// Skills
+.skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(1.75rem, 1.013rem + 2.208vw, 3rem);
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: 100%;
+    }
+    > div {
+        background: $white;
+        padding: clamp(1.75rem, 1.013rem + 2.208vw, 3rem);
+        height: rem-calc(447);
+        @media screen and (max-width: 1024px) {
+            height: unset;
+        }
+        p:first-of-type {
+            font-family: 'Space Grotesk SemiBold';
         }
     }
 }
