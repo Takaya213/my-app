@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import Icon from '../components/icons'
+import Icon from '../components/Icons'
 import GamingEvolved from '../assets/images/gaming-evolved.png'
 import Glam from '../assets/images/glamour-sa.png'
 import HAG from '../assets/images/hag.png'

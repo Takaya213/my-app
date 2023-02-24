@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from 'react-router-dom'
 
-import Icon from './icons'
+import Icon from './Icons'
 
 function Footer() {
   return (
