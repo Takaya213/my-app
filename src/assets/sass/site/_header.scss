@@ -13,7 +13,7 @@ header {
         padding: rem-calc(34) rem-calc(20);
         transition: all linear .3s;
         @media screen and (max-width: 1024px) {
-            grid-template-columns: rem-calc(173) auto rem-calc(36);
+            grid-template-columns: rem-calc(173) auto;
         }
         > a {
             font-family: 'Space Grotesk Bold';
@@ -22,6 +22,10 @@ header {
             }
             &:last-of-type {
                 justify-self: end;
+                @media screen and (max-width: 1024px) {
+                    display: none;
+                    visibility: hidden;
+                }
             }
         }
         #nav {
