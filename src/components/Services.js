@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import Icon from '../components/Icons'
+import Icon from '../components/icons'
 
 function Services() {
   return (

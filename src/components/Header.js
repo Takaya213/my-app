@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import Logo from '../assets/images/nicole.svg'
 import useScrollPosition from '../hooks/useScrollPosition'
-import Icon from './Icons'
+import Icon from './icons'
 import { DesktopNav } from './DesktopNav'
 import MobileNav from './MobileNav'
 

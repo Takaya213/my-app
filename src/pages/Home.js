@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from 'react-router-dom'
 
-import Icon from '../components/Icons'
+import Icon from '../components/icons'
 import Services from "../components/Services"
 import Work from "../components/Work"
 

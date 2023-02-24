@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from 'react-router-dom'
 import { slide as Menu } from 'react-burger-menu'
 
-import Icon from './Icons'
+import Icon from './icons'
 
 function MobileNav() {
   return (
