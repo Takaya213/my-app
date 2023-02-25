@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html,
 body {
     font-family: 'Space Grotesk Regular';
@@ -10,7 +14,7 @@ body {
 }
 
 .hero-wrapper {
-    margin-top: rem-calc(120);
+    margin-top: clamp(6.125rem, -1.6639rem + 14.3488vw, 7.5rem);
     padding: 0 rem-calc(20);
     padding-top: clamp(3.125rem, -1.6639rem + 14.3488vw, 11.25rem);
     padding-bottom: clamp(3.125rem, -1.6639rem + 14.3488vw, 11.25rem);
@@ -27,7 +31,7 @@ body {
     @media screen and (max-width: 700px) {
         grid-template-columns: 100%;
         .hero-image {
-            display: none;
+            padding-top: rem-calc(40);
         }
     }
     .hero-text {
@@ -273,5 +277,88 @@ img, svg {
         p:first-of-type {
             font-family: 'Space Grotesk SemiBold';
         }
+    }
+}
+
+// Education
+.education-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(1.75rem, 1.013rem + 2.208vw, 3rem);
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: 100%;
+    }
+    .education {
+        background: $desertStorm;
+        padding: clamp(1.75rem, 1.013rem + 2.208vw, 3rem);
+        @media screen and (max-width: 1024px) {
+            height: unset;
+        }
+        p {
+            margin: 0;
+            &:first-of-type {
+                font-family: 'Space Grotesk SemiBold';
+            }
+            &:not(:last-of-type) {
+                margin-bottom: rem-calc(5);
+            }
+        }
+    }
+}
+
+// Contact
+.contact {
+    margin: auto;
+    background: $white;
+    padding: clamp(1.75rem, 1.013rem + 2.208vw, 3rem);
+    h2 {
+        margin-top: 0;
+    }
+    .form-item {
+        margin: rem-calc(24) 0;
+    }
+    form {
+        max-width: rem-calc(576);
+        margin: auto;
+    }
+    label {
+        display: block;
+        font-size: rem-calc(14);
+        margin-bottom: rem-calc(5);
+        text-transform: uppercase;
+    }
+    input, textarea {
+        width: 100%;
+        padding: rem-calc(12);
+        background: $wildSand;
+        border: 0 none;
+        font-size: rem-calc(16);
+    }
+    input[type='submit'] {
+        background: $onyx;
+        color: $white;
+        font-size: rem-calc(20);
+        cursor: pointer;
+        transition: all linear .3s;
+        &:hover {
+            background: $irisBlue;
+        } 
+    }
+    h4 {
+        text-align: center;
+    }
+}
+
+.contact-page {
+    .contact {
+        padding-top: rem-calc(140);
+    }
+}
+
+.ReactModal__Overlay {
+    z-index: 9999;
+    .contact {
+        max-width: rem-calc(576);
+        width: 100%;
     }
 }

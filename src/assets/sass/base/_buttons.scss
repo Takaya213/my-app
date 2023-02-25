@@ -5,6 +5,9 @@
     font-weight: normal;
     transform: perspective(1px) translateZ(0);
     width: fit-content;
+    appearance: none;
+    border: 0 none;
+    cursor: pointer;
     &-arrow {
         display: inline-flex;
         flex-direction: row;
@@ -87,4 +90,29 @@
     align-items: center;
     margin-top: clamp(1.25rem, -0.592rem + 5.519vw, 4.375rem);
     margin-bottom: clamp(2.5rem, -0.079rem + 7.726vw, 6.875rem);
+}
+
+.close-btn {
+    background: transparent;
+    border: 0 none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: rem-calc(8);
+    font-family: 'Space Grotesk Medium';
+    cursor: pointer;
+    padding: rem-calc(20);
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: $onyx;
+    svg {
+        transition: all linear .3s;
+    }
+    &:hover {
+        svg {
+            transform: rotate(90deg);
+        }
+    }
 }

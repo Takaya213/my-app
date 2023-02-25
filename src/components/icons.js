@@ -6,12 +6,16 @@ import { ReactComponent as UxUi } from '../assets/images/ux-ui-design.svg'
 import { ReactComponent as Access } from '../assets/images/accessibility.svg'
 
 import { ReactComponent as Arrow } from '../assets/images/arrow.svg'
+import { ReactComponent as CloseBtn } from "../assets/images/close-btn.svg";
 
-export default {
+const Icons = {
     FwdArrow,
     GirlDesk,
     WebDev,
     UxUi,
     Access,
-    Arrow
+    Arrow,
+    CloseBtn
 }
+
+export default Icons

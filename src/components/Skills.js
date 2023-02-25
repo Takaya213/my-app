@@ -18,6 +18,7 @@ function Skills() {
                     <p>HTML 5<br />
                         CSS (Sass, XStyled)<br />
                         jQuery<br />
+                        ReactJS<br />
                         Craft CMS<br />
                         Accessibility<br />
                         Visual Studio Code<br />

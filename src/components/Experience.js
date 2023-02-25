@@ -1,5 +1,5 @@
 import React from "react"
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
+import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, A11y } from 'swiper'
 
 import Icon from './Icons'
@@ -38,8 +38,6 @@ function Experience() {
                         nextEl: '.next-btn',
                         prevEl: '.previous-btn',
                     }}
-                    onSlideChange={() => console.log('slide change')}
-                    onSwiper={(swiper) => console.log(swiper)}
                 >
                     <SwiperSlide>
                         <div className='experience'>

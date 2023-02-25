@@ -15,7 +15,7 @@ header {
         @media screen and (max-width: 1024px) {
             grid-template-columns: rem-calc(173) auto;
         }
-        > a {
+        > button {
             font-family: 'Space Grotesk Bold';
             &:first-of-type {
                 justify-self: start;
@@ -41,6 +41,7 @@ header {
                 font-size: rem-calc(24);
                 color: $onyx;
                 position: relative;
+                cursor: pointer;
                 &::after {
                     content: '';
                     transition: all linear .3s;
@@ -86,7 +87,7 @@ header {
             }
         }
     }
-    a + div {
+    button + div {
         display: none;
         visibility: hidden;
         @media screen and (max-width: 1024px) {
@@ -112,6 +113,7 @@ header {
         color: $white;
         position: relative;
         width: 100%;
+        cursor: pointer;
         &::after {
             content: '';
             transition: all linear .3s;
