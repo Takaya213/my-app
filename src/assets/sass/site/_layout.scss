@@ -79,7 +79,7 @@ img, svg {
 }
 
 .inner-padding {
-    padding: clamp(3.125rem, 0.915rem + 6.623vw, 6.875rem) rem-calc(10) clamp(3.125rem, 0.915rem + 6.623vw, 6.875rem);
+    padding: clamp(3.125rem, 0.915rem + 6.623vw, 6.875rem) rem-calc(30) clamp(3.125rem, 0.915rem + 6.623vw, 6.875rem);
     h2 {
         margin-top: 0;
     }
@@ -301,6 +301,16 @@ img, svg {
             }
             &:not(:last-of-type) {
                 margin-bottom: rem-calc(5);
+            }
+        }
+        a {
+            margin: 0;
+            margin-bottom: rem-calc(5);
+            color: $onyx;
+            text-decoration: underline;
+            transition: all linear .3s;
+            &:hover {
+                color: $cardinal;
             }
         }
     }

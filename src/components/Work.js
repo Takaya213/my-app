@@ -19,7 +19,7 @@ function Work() {
                 <p className='txt-dark-grey'>High-end game server hosting company with a vast array of games to choose from.</p>
               </div>
               <Link to='/' className='button button-dark button-arrow'>
-                <span>View case study</span>
+                <span>Coming soon</span>
                 <Icon.FwdArrow style={{ color: '#FFFFFF' }} />
               </Link>
             </div>
@@ -36,7 +36,7 @@ function Work() {
                 <p className='txt-dark-grey'>Latest news on your favourite celebs, fashion trends and relationship advice.</p>
               </div>
               <Link to='/' className='button button-dark button-arrow'>
-                <span>View case study</span>
+                <span>Coming soon</span>
                 <Icon.FwdArrow style={{ color: '#FFFFFF' }} />
               </Link>
             </div>
@@ -53,7 +53,7 @@ function Work() {
                 <p className='txt-dark-grey'>South Africa's premier design, décor and lifestyle magazine.</p>
               </div>
               <Link to='/' className='button button-dark button-arrow'>
-                <span>View case study</span>
+                <span>Coming soon</span>
                 <Icon.FwdArrow style={{ color: '#FFFFFF' }} />
               </Link>
             </div>

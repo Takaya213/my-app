@@ -5,7 +5,7 @@ import Logo from '../assets/images/nicole.svg'
 import useScrollPosition from '../hooks/useScrollPosition'
 import { DesktopNav } from './DesktopNav'
 import MobileNav from './MobileNav'
-import LetsTalk from './LetsTalk'
+import Button from './Button'
 
 export const Header = () => {
   function classNames(...classes) {
@@ -13,11 +13,13 @@ export const Header = () => {
   }
   const scrollPosition = useScrollPosition()
   return (
-    <header className={classNames( scrollPosition > 0 ? 'slim' : '' )}r>
+    <header className={classNames(scrollPosition > 0 ? 'slim' : '')} r>
       <div>
-        <Link to='/'><img src={Logo} alt='Nicole.' /></Link>
+        <Link to='/'>
+          <img src={Logo} alt='Nicole.' />
+        </Link>
         <DesktopNav />
-        <LetsTalk />
+        <Button styleClass='button-light' text="Let's talk" colour='#121212' />
         <MobileNav />
       </div>
     </header>
