@@ -10,7 +10,6 @@ const ContactForm = () => {
 
     emailjs.sendForm('service_lfgbvzl', 'template_ea9xc0o', form.current, 'o6AVEsusIYyo9PSdv').then(
       result => {
-        console.log(result.text)
         setStatusMessage('Thank you for your enquiry.')
       },
       error => {

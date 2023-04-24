@@ -5,8 +5,6 @@ import { Link as Url } from 'react-scroll'
 export const DesktopNav = () => {
   const location = useLocation()
 
-  console.log(location)
-
   if (location.pathname === '/') {
     return (
       <nav id='nav'>
